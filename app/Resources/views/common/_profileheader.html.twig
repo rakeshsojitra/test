@@ -1,0 +1,54 @@
+<div id="outer">
+    <div id="outer-canvas"> 
+
+        <!-- Navbar -->
+        <header>
+            <div class="back-to-top">
+                <span class="arrow-up">
+                    <img src="{{ asset('images/icon-scroll-arrow.png') }}" alt="">
+                </span>
+                <img src="{{ asset('images/icon-scroll-mouse.png') }}" alt=""> 
+            </div>
+            <section class="navbar">
+                <div class="navbar-header">
+                    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">            
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="{{ asset('images/logo.png') }}" alt="ClothStudio-logo">
+                    </a>
+                </div>  
+                <div class="background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10">
+                                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                                        <span style="float: left">Hiii:{{ app.user.username }}</span>
+                                     {% endif%}
+                            </div>
+                            <div class="navbar-secondary-menu col-sm-9 compact-hidden">
+                                <div class="btn-group">
+                                    <a data-toggle="dropdown" style="padding-top: 0px;" class="btn btn-xs btn-default dropdown-toggle" title="Account" href="#"><span class="icon icon-lg flaticon-business137"></span>
+                                        <span class="drop-title">Account</span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">My Profile</a></li>
+                                        <li><a href="#">My Preferences</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Navbar height -->
+            <div class="navbar-height">
+            </div>
+            <!-- Navbar height -->
+        </header>
+<!-- //end Navbar -->
+        <div class="divider divider-lg"></div>

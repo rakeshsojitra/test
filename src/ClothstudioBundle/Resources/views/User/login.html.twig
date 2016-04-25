@@ -1,0 +1,25 @@
+{# app/Resources/views/security/login.html.twig #}
+{# ... you will probably extends your base template, like base.html.twig #}
+{% extends "::base.html.twig" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+  
+    {% if error %}
+
+
+        <div class="container content" >
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xs-12 howitworks-text text-center">
+                    <div class="alert alert-danger" role="alert">
+                        {{ error.messageKey|trans(error.messageData, 'security') }}&nbsp;For{{last_username}}
+                         
+                    </div>
+                </div>
+                
+                    
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

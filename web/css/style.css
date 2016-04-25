@@ -1,0 +1,255 @@
+.grey-container{
+    /*    background: white !important;*/
+}
+.modal-margin-top{
+    margin-top: 100px;
+}
+.forgot-password{
+    display: none;
+}
+.close {
+    position: relative;
+    z-index: 999;
+}
+.a-popup-color{
+    color:#28AAE1 !important;
+    cursor: pointer;
+}
+.lab-pointer{
+    cursor: pointer;
+}
+.margin-col-sm-top{
+    margin-top: 21px;
+}
+.margin-bottom{
+    margin-top: 10px ;
+    margin-bottom: 15px;
+}
+.seven-image-height{
+    width: 14.28%;
+}
+
+.radiochecked {
+    background: #e3e3e3 url("../images/radiochecked.png") no-repeat scroll center center;
+    display: none;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease 0s;
+    width: 100%;
+}
+.checkbox-checked{
+
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease 0s;
+    width: 100%;
+}
+.highlight{
+    background: red;
+    background: #e3e3e3 url("../images/radiochecked.png") no-repeat scroll center center;
+    width: 97%;
+    /*    border: 1px dotted #cacaca;*/
+    margin-left: 5px;
+}
+.light-1{
+    width: 100%;
+}
+.bootstrap-select:not([class*="span"]) {
+    width: 100%;
+}
+.form-control{
+    text-transform: none; 
+}
+.center-text-align{
+    text-align: center;
+    margin-top: 15px;
+}
+.panel-body{
+    padding: 5px;
+}
+.p-set-font{
+    text-align: justify;
+}
+.right-side-border{
+    border-right: 2px solid #DDD;
+}
+.nav > li > a {
+    display: inline;
+}
+.nav-tabs > li > a {
+    border: none;
+}
+.nav-tabs{
+    white-space: normal;
+}
+.navbar-nav > li {
+    margin-top: 15px;   
+}
+body.modal-open {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+
+}
+body{
+    margin-right: 0 !important;
+    padding-right: 0 !important; 
+}
+.checkbox-checked{
+    cursor: pointer;
+}
+.prefer-tab li{
+    border-bottom: 1px dotted #cacaca;
+}
+.prefer-tab li:last-child{
+    border:none;
+}
+/*.prefer-tab  li  a:focus, .prefer-tab  li  a:hover {
+    background-color: white;
+    height: 100%;
+    text-decoration: none;
+}*/
+.prefer-tab li.active,.prefer-tab li:hover{
+    background:#EEEEEE;
+    border:none ;
+}
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+    box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    margin-top: 20px;
+    color: #C69C6D;
+    font-size: 15px;
+    font-weight: 500;
+}
+.work_title{
+    text-align: center;
+    margin-top: 20px;
+}
+.work_title1{
+    margin-top: 100px;
+}
+.work_title1 button{
+    /*   padding-left: 50px;
+       padding-right: 50px;*/
+    width: 150px;
+    border-radius: 1px;
+}
+.margin-right{
+    margin-right: 10px;
+    color: maroon;
+}
+
+.height-lookpage{
+    height: 270px;
+}
+
+.image-height{
+    width: 100%;
+    height: 260px;
+}
+.image-height1{
+    width: 100%;
+    height: 190px;
+}
+.border-none-right1{
+    border-right: none;
+}
+.product_description{
+    margin: 20px 0 0 0;
+/*    border: 1px solid #DDDDDD;*/
+}
+.image-padding-remove{
+    padding-right: 0;
+
+}
+.image-height4{
+    height: 70px;
+}
+#sub-product{
+display: none;
+}
+.front-menu{
+    margin-top: 3px;
+    margin-right: 35px;
+}
+.content .tab-content {
+    border: medium none !important;
+}
+.rect{
+    border: none;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    background:none !important;
+    border: none;
+    border-bottom: medium none;
+    font-weight: 500;
+    color: #000;
+}
+.navbar-brand1 {
+    font-size: 18px;
+    height: 50px;
+    line-height: 20px;
+    padding: 15px;
+}
+.set-image-padding{
+    padding: 5px;
+    margin-bottom: 5px;
+    
+}
+.pull-right1{
+    float: right;
+    margin-top: 10px;
+}
+.product-carousel .carousel-item{
+    margin: 0 !important;
+}
+
+
+
+
+
+
+
+@media only screen and (max-device-width:768px){
+    .seven-image-height{
+        width: 50%
+    }
+    
+/*    .image-padding-remove{
+        padding-right: 15px;
+    }*/
+    .work_title1{
+        margin: 0px 0px 10px 0px;
+    }
+
+}
+@media only screen and (max-device-width:480px){
+    .seven-image-height{
+        width: 50%
+    }
+
+}
+@media only screen and (max-device-width:360px){
+    .cloth-logo{
+        width: 150px;
+    }
+    .pull-right1{
+        float: none;
+    }
+
+
+}
