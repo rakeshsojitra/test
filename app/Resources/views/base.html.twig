@@ -153,9 +153,9 @@
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <div class="row">
                                 <form action="/signupnew" method="post">
-                                    <div class="col-sm-6 rect " style="margin-top: 21px" >
-                                        <div  class="banner-square animate fadeInDown animated products-nospace">
-                                            <div class="image-check product-preview">
+                                    <div class="col-sm-6 rect " style="margin-top: 21px" id="men" >
+                                        <div  class="banner-square animate fadeInDown animated products-nospace" onclick="location.href = '/mensignup'">
+                                            <div class="image-check product-preview" id="img-chk">
                                                 <div class="image"> 
                                                     <label class="lab-pointer" for="male">
                                                         <img class="animate-scale" alt="" src="{{asset('images/signupman-button.jpg')}}">
@@ -170,11 +170,11 @@
                                             </div>
                                         </div>
                                         <input class="hidden" id="male" type="radio" name="gender" value="male"/>
-                                        <div class="radiochecked"></div>
+
                                     </div>
-                                    <div class="col-sm-6 rect" >
-                                        <div  class="banner-square animate fadeInDown animated products-nospace">
-                                            <div class="image-check product-preview ">
+                                    <div class="col-sm-6 rect" id="women" >
+                                        <div  class="banner-square animate fadeInDown animated products-nospace" onclick="location.href = '/womensignup'">
+                                            <div class="image-check product-preview " id="img-chk-women">
                                                 <div class="image">
                                                     <label class="lab-pointer" for="female">
                                                         <img class="animate-scale" alt="" src="{{ asset('images/signupwoman-button.jpg')}}">
@@ -189,7 +189,6 @@
                                             </div>
                                         </div>
                                         <input class="hidden" id="female" type="radio" name="gender" value="female"/>
-                                        <div class="radiochecked"></div>
                                     </div>
                                 </form>
                             </div>
@@ -211,11 +210,11 @@
                     $j(".login").show(10);
                     $j(".forgot-password").css('display', 'none');
                 });
-                $j(".image-check").click(function () {
-                    $j('.radiochecked').hide();
-                    $j(this).parents('.col-sm-6').find('.radiochecked').show();
+                $j("#img-chk").click(function () {
                     $j(this).parents('.col-sm-6').find('input[type=radio]').click();
-                    $j(this).parents('form').first().submit();
+                });
+                $j("#img-chk-women").click(function () {
+                    $j(this).parents('.col-sm-6').find('input[type=radio]').click();
                 });
                 $j("#mmm").click(function () {
                     $j('#myModalsignup').modal('hide');
@@ -224,6 +223,7 @@
                     $j('#myModal').modal('hide');
                 });
             });
+
         </script>
     </body>
 </html>

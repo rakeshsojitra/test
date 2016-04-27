@@ -82,6 +82,11 @@
 .nav > li > a {
     display: inline;
 }
+.nav > li > a.tab-perfer{
+    display: inline-block;
+    width: 100%;
+    padding: 1px 1px 5px 10px;
+}
 .nav-tabs > li > a {
     border: none;
 }
@@ -170,7 +175,7 @@ legend.scheduler-border {
 }
 .product_description{
     margin: 20px 0 0 0;
-/*    border: 1px solid #DDDDDD;*/
+    /*    border: 1px solid #DDDDDD;*/
 }
 .image-padding-remove{
     padding-right: 0;
@@ -180,7 +185,7 @@ legend.scheduler-border {
     height: 70px;
 }
 #sub-product{
-display: none;
+    display: none;
 }
 .front-menu{
     margin-top: 3px;
@@ -208,15 +213,30 @@ display: none;
 .set-image-padding{
     padding: 5px;
     margin-bottom: 5px;
-    
+
 }
 .pull-right1{
     float: right;
     margin-top: 10px;
 }
-.product-carousel .carousel-item{
+/*.product-carousel .carousel-item{
     margin: 0 !important;
+}*/
+.carousel-control.left{
+    background: none ;
 }
+.carousel-control.right{
+    background: none;
+}
+a .slick-prev, a .slick-next{
+    top:0;
+    margin-top: 150px;
+    background: black;
+}
+.cat-margin-left{
+    margin-left: 25px;
+}
+
 
 
 
@@ -228,18 +248,31 @@ display: none;
     .seven-image-height{
         width: 50%
     }
-    
-/*    .image-padding-remove{
-        padding-right: 15px;
-    }*/
+
+    /*    .image-padding-remove{
+            padding-right: 15px;
+        }*/
     .work_title1{
         margin: 0px 0px 10px 0px;
+    }
+    a .slick-prev, a .slick-next{
+
+        margin-top: 250px;
+    }
+    a .slick-next {
+        right: -10px;
+    }
+    a .slick-prev{
+        left: -10px;
     }
 
 }
 @media only screen and (max-device-width:480px){
     .seven-image-height{
         width: 50%
+    }
+    a .slick-prev, a .slick-next{
+        margin-top: 150px;
     }
 
 }
@@ -249,6 +282,19 @@ display: none;
     }
     .pull-right1{
         float: none;
+    }
+    a .slick-next {
+        left: 29px;
+    }
+    a .slick-prev, a .slick-next{
+
+        margin-top: 125px;
+    }
+    a .slick-prev{
+        left: -15px;
+    }
+    .margin-footer{
+        margin: 15px 0px 15px 0px;
     }
 
 

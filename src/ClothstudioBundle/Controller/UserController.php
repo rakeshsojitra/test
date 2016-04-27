@@ -72,7 +72,7 @@ class UserController extends Controller {
         }
 
         return $this->render('ClothstudioBundle:User:profile.html.twig', array(
-                    'userid' => $this->getUser(),
+                    'user' => $this->getUser(),
         ));
     }
 
@@ -116,20 +116,27 @@ class UserController extends Controller {
     }
 
     /**
+     * @Route("/mensignup", name="mensignup")
+     */
+    public function mensignupAction(Request $request) {
+        return $this->render('ClothstudioBundle:User:model-men.html.twig', array(
+                    'gender' => $request->request->get('gender')
+        ));
+    }
+
+    /**
+     * @Route("/womensignup", name="womensignup")
+     */
+    public function womensignupAction(Request $request) {
+        return $this->render('ClothstudioBundle:User:model-women.html.twig', array(
+                    'gender' => $request->request->get('gender')
+        ));
+    }
+
+    /**
      * @Route("/signupnew", name="signupnew")
      */
     public function signupnewAction(Request $request) {
-        if ($request->request->get('gender')) {
-            if ($request->request->get('gender') == 'male') {
-                return $this->render('ClothstudioBundle:User:model-men.html.twig', array(
-                            'gender' => $request->request->get('gender')
-                ));
-            } else {
-                return $this->render('ClothstudioBundle:User:model-women.html.twig', array(
-                            'gender' => $request->request->get('gender')
-                ));
-            }
-        }
         if ($request->isMethod('POST')) {
             //do validation
             $customer = new Customer();
@@ -183,7 +190,7 @@ class UserController extends Controller {
             throw $this->createAccessDeniedException();
         }
         return $this->render('ClothstudioBundle:User:account.html.twig', array(
-                        // ...
+                    'user' => $this->getUser(),
         ));
     }
 
